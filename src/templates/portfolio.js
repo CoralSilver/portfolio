@@ -18,36 +18,22 @@ class PortfolioPageTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <ContainerLarge>
-          <article
-            className={`post-content no-image`}
-          >
-            <header className="post-content-header">
-              <h2 className="post-content-title">{post.frontmatter.title}</h2>
+          <article>
+            <header>
+              <h1>{post.frontmatter.title}</h1>
             </header>
-
             {post.frontmatter.description && (
-              <p class="post-content-excerpt">{post.frontmatter.description}</p>
+              <p>{post.frontmatter.description}</p>
             )}
-
-            <div
-              className="post-content-body"
-              dangerouslySetInnerHTML={{ __html: post.html }}
-            />
-
+            <div dangerouslySetInnerHTML={{ __html: post.html }}/>
+            <ul>
             {post.frontmatter.date && (
-              <p class="post-content-excerpt">Date: {post.frontmatter.date}</p>
-            )}  
-
+              <li>Date: {post.frontmatter.date}</li>
+            )}
             {post.frontmatter.category && (
-              <p class="post-content-excerpt">Category: {post.frontmatter.category }</p>
+              <li>Category: {post.frontmatter.category }</li>
             )}  
-
-            <footer className="post-content-footer">
-              {/* There are two options for how we display the byline/author-info.
-          If the post has more than one author, we load a specific template
-          from includes/byline-multiple.hbs, otherwise, we just use the
-          default byline. */}
-            </footer>
+            </ul>
             <Link to="/portfolio">Close Project</Link>
           </article>
         </ContainerLarge>
