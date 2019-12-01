@@ -1,14 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
 import { graphql } from 'gatsby';
 import Layout from "../components/layout/layout";
-import Image from "../components/image";
-import StyledBackgroundSection from '../components/backgroundImage';
 import SEO from "../components/seo";
-import heartIcon from "../icons/ic_heart.svg";
 import GridImage from "../components/grid/gridImage";
-import { Container } from "../components/container.css";
-import Social from "../components/social/social";
 
 const PortfolioPage = ({data, path}) => {
   const parsedData = data.allContentJson.nodes[0];
