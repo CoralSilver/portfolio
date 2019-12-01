@@ -10,48 +10,29 @@ import GridImage from "../components/grid/gridImage";
 import { Container } from "../components/container.css";
 import Social from "../components/social/social";
 
-const IndexPage = ({data, path}) => {
+const About = ({data, path}) => {
 
   return (
   <div>
-        <StyledBackgroundSection>
-
   <Layout path={path}>
     <SEO title="Home" />
-    <Container>
-    <h2 className="hero-title">Coral Silverman</h2>
-    <h3 className="hero-description">Front End & UI-UX Engineer</h3>
-    <Social />
-    </Container>
+    <StyledBackgroundSection>
+    <section style={{backgroundColor: '#75737b'}}>
+      <Container>
+      <h2>About</h2>
+      <p>An artist by training, I bring an eye for design to all my work.
+        I currently have a full time gig as a front-end engineer at Moodys Analytics on the User Experience team.
+        I love ES6 and flexbox, and divide my time between working on building components for our React UI library and
+        helping other teams build and launch new features.
+      </p>
+      <Social />
+      </Container>
+    </section>
+    </StyledBackgroundSection>
     <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   </Layout>
-  </StyledBackgroundSection>
-
   </div>
-
   )
 }
 
-export default IndexPage;
-
-// export const data = graphql`
-//   query HomepageQuery {
-//     allContentJson {
-//       nodes {
-//         title,
-//         gallery {
-//           title
-//           copy
-//           linkTo
-//           image {
-//             childImageSharp {
-//               fluid(maxHeight: 500, quality: 90) {
-//                 ...GatsbyImageSharpFluid_withWebp
-//               }
-//             }
-//           }          
-//         }
-//       }
-//     }
-//   }
-// `;
+export default About;
