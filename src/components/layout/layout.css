@@ -562,6 +562,9 @@ pre tt:after {
 
 .hero-description {
   color: white;
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: unset;
 }
 
 .portfolio-gif img {

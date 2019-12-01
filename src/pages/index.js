@@ -12,7 +12,7 @@ const IndexPage = ({ path }) => {
       <SEO title="Home" />
         <Container>
           <h1 className="hero-title">Coral Silverman</h1>
-          <h2 className="hero-description">Front End & UI-UX Engineer</h2>
+          <h2 className="hero-description">User Experience Engineer</h2>
           <Social />
         </Container>
     </Layout>

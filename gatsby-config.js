@@ -82,7 +82,7 @@ module.exports = {
         fonts: [
           {
             family: `Lora`,
-            variants: [`400`, `700`,`400italic`,`700italic`]
+            variants: [`400`, `700`]
           },
           {
             family: `Montserrat`,

@@ -6,7 +6,7 @@ import StyledHeader from "./header.css";
 const Header = ({ siteTitle, path }) => (
   <StyledHeader>
     <nav>
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, fontWeight: "400" }}>
         <Link to="/">
           {siteTitle}
         </Link>

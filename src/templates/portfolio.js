@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
+import styled from "styled-components"
 import Layout from "../components/layout/layout"
 import { ContainerLarge } from "../components/container.css";
 import SEO from "../components/seo"
@@ -17,7 +17,7 @@ class PortfolioPageTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <ContainerLarge>
-          <article>
+          <StyledArticle>
             <header>
               <h1>{post.frontmatter.title}</h1>
             </header>
@@ -33,15 +33,39 @@ class PortfolioPageTemplate extends React.Component {
               <li>Category: {post.frontmatter.category }</li>
             )}  
             </ul>
-            <Link to="/portfolio">Close Project</Link>
-          </article>
+            <StyledLink to="/portfolio">Close Project</StyledLink>
+          </StyledArticle>
         </ContainerLarge>
       </Layout>
     )
   }
 }
 
-export default PortfolioPageTemplate
+export default PortfolioPageTemplate;
+
+const StyledArticle = styled.article`
+  a {
+    font-weight: 700;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  background-color: #555;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    padding: .5em .75em;
+    transition: backgroud-color .3s ease-in-out;
+    user-select: none;
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+      background-color: #afaeaf;
+    }
+`;
 
 export const pageQuery = graphql`
   query PortfolioBySlug($slug: String!) {
