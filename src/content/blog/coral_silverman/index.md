@@ -12,5 +12,5 @@ category: Web Design, Logo Design, Web Development
 
 ![Coral Silverman art website](./coralsilverman_responsive2.jpg)
 
-<p>Design and development of resposive portfolio of my fine-art work. <a rel="noreferrer" href="http://www.coralsilverman.com" class="link-darker" target="_blank">coralsilverman.com</a>
+<p>Design and development of resposive portfolio of my fine-art work. <a rel="noreferrer" href="http://www.coralsilverman.com/computers" class="link-darker" target="_blank">coralsilverman.com</a>
 </p>
