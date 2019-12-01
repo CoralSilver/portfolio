@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -27,10 +27,12 @@ const Layout = ({ children, path }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} path={path}/>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer style={{ padding: ".75rem", textAlign: "center"}}>
+          <small>
+            <span>Built with <a rel="noreferrer" href="https://www.gatsbyjs.org">Gatsby, </a></span>
+            <span>Photograph by <a rel="noreferrer" href="http://www.vitorpt.com" target="_blank">Vitor P Teixeira, </a></span>
+            <span>Icons by <a rel="noreferrer" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a></span>
+          </small>
         </footer>
     </>
   )
