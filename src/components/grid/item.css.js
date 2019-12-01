@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Title = styled.h2`
   display: block;
   font-size: 1.35rem;
-  color: #333;
+  color: #141414;
   margin: 1rem 1rem .5rem;
 `;
 
@@ -15,6 +15,7 @@ export const Copy = styled.span`
 
 export const Card = styled.figure`
   background-color: #fff;
+  box-shadow: 0px 0px 8px 1px gainsboro;
   cursor: pointer;
   transition: scale .3s;
   padding-bottom: 1.5rem;

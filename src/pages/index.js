@@ -11,24 +11,17 @@ import { Container } from "../components/container.css";
 import Social from "../components/social/social";
 
 const IndexPage = ({data, path}) => {
-
   return (
-  <div>
-        <StyledBackgroundSection>
-
-  <Layout path={path}>
-    <SEO title="Home" />
-    <Container>
-    <h2 className="hero-title">Coral Silverman</h2>
-    <h3 className="hero-description">Front End & UI-UX Engineer</h3>
-    <Social />
-    </Container>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-  </Layout>
+  <StyledBackgroundSection>
+    <Layout path={path}>
+      <SEO title="Home" />
+      <Container>
+      <h1 className="hero-title">Coral Silverman</h1>
+      <h2 className="hero-description">Front End & UI-UX Engineer</h2>
+      <Social />
+      </Container>
+    </Layout>
   </StyledBackgroundSection>
-
-  </div>
-
   )
 }
 

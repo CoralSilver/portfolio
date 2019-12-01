@@ -7,6 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
 }
 article,
 aside,
@@ -40,6 +41,7 @@ template {
   display: none;
 }
 a {
+  color: #55236c;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
@@ -200,7 +202,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: #333;
+  color: #141414;
   font-family: Lora, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -219,7 +221,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-left: 0;
@@ -229,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
   color: inherit;
   font-family: Montserrat, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -238,10 +240,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
 }
 h1 {
-  font-size: 4.5rem;
+  font-size: 2.25rem;
 }
 h2 {
-  font-size: 1.62671rem;
+  font-size: 1.38316rem;
 }
 h3 {
   font-size: 1.38316rem;
@@ -456,8 +458,8 @@ margin: 0;
 list-style-type: none;
  }
 li {
-    display: inline-flex;
-    padding: 1rem;
+  display: inline-flex;
+  padding: 1rem 1rem 1rem 0;
 }
 blockquote *:last-child {
   margin-bottom: 0;
@@ -560,4 +562,8 @@ pre tt:after {
 
 .hero-description {
   color: white;
+}
+
+.portfolio-gif img {
+  border: 1px solid #dadada;
 }

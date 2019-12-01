@@ -6,7 +6,7 @@ import { Container } from '../container.css';
 
 const GridImage = ({ items }) => (
   <Container>
-    <h2>Portfolio</h2>
+    <h1>Portfolio</h1>
     <Grid>
       {items.map((item, i) => (
         <Item {...item} key={i} />

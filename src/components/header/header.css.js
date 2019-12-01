@@ -14,7 +14,6 @@ export default styled.header`
   }
 
   h1, a {
-    color: inherit;
     font-size: inherit;
   }
 `;

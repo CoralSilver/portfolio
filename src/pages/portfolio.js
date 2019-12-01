@@ -17,7 +17,7 @@ const PortfolioPage = ({data, path}) => {
   <div>
     <Layout path={path}>
       <SEO title="Portfolio" />
-      <section style={{ backgroundColor: '#d8d3d3'}}>
+      <section>
         <GridImage items={parsedData.gallery} />
       </section>
     </Layout>
