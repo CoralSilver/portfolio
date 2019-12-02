@@ -27,7 +27,6 @@ export const data = graphql`
       nodes {
         experiments {
           title
-          copy
           linkTo
           image {
             childImageSharp {
