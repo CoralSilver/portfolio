@@ -1,40 +1,42 @@
 {
-  "gallery": [{
-    "title": "Moody's Analytics",
-    "copy": "Front-End Development",
-    "linkTo": "/portfolio/moodys/",
-    "image": "../images/portfolio/Moody's_Analytics.png"
-  },
-  {
-    "title": "Kaplan Test Prep",
-    "copy": "Front-End Development",
-    "linkTo": "/portfolio/kaplan/",
-    "image": "../images/portfolio/Kaplan_Test_Prep.png"
-  },
-  {
-    "title": "Kind Table",
-    "copy": "Website Design and Development",
-    "linkTo": "/portfolio/kind-table/",
-    "image": "../images/portfolio/Kind_Table.png"
-  },
-  {
-    "title": "Charles Warren",
-    "copy": "Website Design and Development",
-    "linkTo": "/portfolio/charles-warren/",
-    "image": "../images/portfolio/Charles_Warren.png"
-  },
-  {
-    "title": "Culture Crux",
-    "copy": "Website Design and Development",
-    "linkTo": "/portfolio/culture-crux/",
-    "image": "../images/portfolio/Culture_Crux.png"
-  },
-  {
-    "title": "Personal Art Portfolio",
-    "copy": "Website Design and Development",
-    "linkTo": "/portfolio/art-portfolio/",
-    "image": "../images/portfolio/Personal_Art_Portfolio.png"
-  }],
+  "gallery": [
+    {
+      "title": "Moody's Analytics",
+      "copy": "Front-End Development",
+      "linkTo": "/portfolio/moodys/",
+      "image": "../images/portfolio/Moody's_Analytics.png"
+    },
+    {
+      "title": "Kaplan Test Prep",
+      "copy": "Front-End Development",
+      "linkTo": "/portfolio/kaplan/",
+      "image": "../images/portfolio/Kaplan_Test_Prep.png"
+    },
+    {
+      "title": "Kind Table",
+      "copy": "Website Design and Development",
+      "linkTo": "/portfolio/kind-table/",
+      "image": "../images/portfolio/Kind_Table.png"
+    },
+    {
+      "title": "Charles Warren",
+      "copy": "Website Design and Development",
+      "linkTo": "/portfolio/charles-warren/",
+      "image": "../images/portfolio/Charles_Warren.png"
+    },
+    {
+      "title": "Culture Crux",
+      "copy": "Website Design and Development",
+      "linkTo": "/portfolio/culture-crux/",
+      "image": "../images/portfolio/Culture_Crux.png"
+    },
+    {
+      "title": "Personal Art Portfolio",
+      "copy": "Website Design and Development",
+      "linkTo": "/portfolio/art-portfolio/",
+      "image": "../images/portfolio/Personal_Art_Portfolio.png"
+    }
+  ],
   "experiments": [
     {
       "title": "Spinning Mandala",

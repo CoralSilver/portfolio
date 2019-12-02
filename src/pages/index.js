@@ -1,23 +1,23 @@
-import React from "react";
-import styled from "styled-components";
-import Layout from "../components/layout/layout";
-import StyledBackgroundSection from '../components/backgroundImage';
-import SEO from "../components/seo";
-import { Container } from "../components/container.css";
-import Social from "../components/social/social";
+import React from "react"
+import styled from "styled-components"
+import Layout from "../components/layout/layout"
+import StyledBackgroundSection from "../components/backgroundImage"
+import SEO from "../components/seo"
+import { Container } from "../components/container.css"
+import Social from "../components/social/social"
 
 const IndexPage = ({ path }) => {
   return (
-  <StyledBackgroundSection>
-    <Layout path={path}>
-      <SEO title="Home" />
+    <StyledBackgroundSection>
+      <Layout path={path}>
+        <SEO title="Home" />
         <Container>
           <StyledTitle>Coral Silverman</StyledTitle>
           <StyledTagline>User Experience Engineer</StyledTagline>
           <Social />
         </Container>
-    </Layout>
-  </StyledBackgroundSection>
+      </Layout>
+    </StyledBackgroundSection>
   )
 }
 
@@ -30,7 +30,7 @@ const StyledTitle = styled.h1`
   @media screen and (min-width: 1000px) {
     font-size: 5rem;
   }
-`;
+`
 
 const StyledTagline = styled.h2`
   color: white;
@@ -40,6 +40,6 @@ const StyledTagline = styled.h2`
   @media screen and (min-width: 768px) {
     font-size: 2rem;
   }
-`;
+`
 
-export default IndexPage;
+export default IndexPage

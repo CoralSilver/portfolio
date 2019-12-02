@@ -1,9 +1,9 @@
-import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
-import styled from 'styled-components';
- 
-import BackgroundImage from 'gatsby-background-image-es5';
- 
+import React from "react"
+import { graphql, StaticQuery } from "gatsby"
+import styled from "styled-components"
+
+import BackgroundImage from "gatsby-background-image-es5"
+
 const BackgroundSection = ({ children, className }) => (
   <StaticQuery
     query={graphql`
@@ -33,7 +33,7 @@ const BackgroundSection = ({ children, className }) => (
     }}
   />
 )
- 
+
 const StyledBackgroundSection = styled(BackgroundSection)`
   display: flex;
   align-items: center;
@@ -45,5 +45,5 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-repeat: repeat-y;
   background-size: cover;
 `
- 
-export default StyledBackgroundSection;
+
+export default StyledBackgroundSection

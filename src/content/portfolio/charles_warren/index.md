@@ -6,7 +6,6 @@ description: Design and development of website for Manhattan based couture desig
 category: Web Design, Web Development
 ---
 
-
 ![charles warren website screenshot](./charleswarren_responsive.png)
 
 ![charles warren website screenshot](./charles_warren_index.jpg)

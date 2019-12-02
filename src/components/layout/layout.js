@@ -18,15 +18,34 @@ const Layout = ({ children, path }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} path={path}/>
-        <main>{children}</main>
-        <footer style={{ padding: ".75rem", textAlign: "center"}}>
-          <small>
-            <span>Built with <a rel="noreferrer" href="https://www.gatsbyjs.org">Gatsby, </a></span>
-            <span>Photograph by <a rel="noreferrer" href="http://www.vitorpt.com" target="_blank">Vitor P Teixeira, </a></span>
-            <span>Icons by <a rel="noreferrer" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a></span>
-          </small>
-        </footer>
+      <Header siteTitle={data.site.siteMetadata.title} path={path} />
+      <main>{children}</main>
+      <footer style={{ padding: ".75rem", textAlign: "center" }}>
+        <small>
+          <span>
+            Built with{" "}
+            <a rel="noreferrer" href="https://www.gatsbyjs.org">
+              Gatsby,{" "}
+            </a>
+          </span>
+          <span>
+            Photograph by{" "}
+            <a rel="noreferrer" href="http://www.vitorpt.com" target="_blank">
+              Vitor P Teixeira,{" "}
+            </a>
+          </span>
+          <span>
+            Icons by{" "}
+            <a
+              rel="noreferrer"
+              href="https://www.flaticon.com/authors/pixel-perfect"
+              title="Pixel perfect"
+            >
+              Pixel perfect
+            </a>
+          </span>
+        </small>
+      </footer>
     </>
   )
 }

@@ -35,7 +35,10 @@ exports.createPages = ({ graphql, actions }) => {
     const portfolioPages = result.data.allMarkdownRemark.edges
 
     portfolioPages.forEach((post, index) => {
-      const previous = index === portfolioPages.length - 1 ? null : portfolioPages[index + 1].node
+      const previous =
+        index === portfolioPages.length - 1
+          ? null
+          : portfolioPages[index + 1].node
       const next = index === 0 ? null : portfolioPages[index - 1].node
 
       createPage({

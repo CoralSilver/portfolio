@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export default styled.header`
   background: #ffffff82;
@@ -13,14 +13,15 @@ export default styled.header`
     padding-right: 1.5rem;
   }
 
-  h1, a {
+  h1,
+  a {
     font-size: inherit;
   }
 
   @media only screen and (max-width: 400px) {
     li {
-      padding-right: .5rem;
-      font-size: .7rem;
-    }  
+      padding-right: 0.5rem;
+      font-size: 0.7rem;
+    }
   }
-`;
+`

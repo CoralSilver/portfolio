@@ -8,4 +8,3 @@ description: Spinning mandala animated with CSS
   See the Pen <a href='https://codepen.io/coralsea/pen/PPYXNx'>CSS Animated Mandala</a> by Coral
   (<a href='https://codepen.io/coralsea'>@coralsea</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-

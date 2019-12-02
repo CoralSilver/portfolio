@@ -1,25 +1,25 @@
-import React from "react";
-import { graphql } from 'gatsby';
-import Layout from "../components/layout/layout";
-import SEO from "../components/seo";
-import GridImage from "../components/grid/gridImage";
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../components/layout/layout"
+import SEO from "../components/seo"
+import GridImage from "../components/grid/gridImage"
 
-const PortfolioPage = ({data, path}) => {
-  const parsedData = data.allContentJson.nodes[0];
+const PortfolioPage = ({ data, path }) => {
+  const parsedData = data.allContentJson.nodes[0]
 
   return (
-  <div>
-    <Layout path={path}>
-      <SEO title="Portfolio" />
-      <section>
-        <GridImage title="Portfolio" items={parsedData.gallery} />
-      </section>
-    </Layout>
-  </div>
+    <div>
+      <Layout path={path}>
+        <SEO title="Portfolio" />
+        <section>
+          <GridImage title="Portfolio" items={parsedData.gallery} />
+        </section>
+      </Layout>
+    </div>
   )
 }
 
-export default PortfolioPage;
+export default PortfolioPage
 
 export const data = graphql`
   query portfolioQuery {
@@ -35,10 +35,9 @@ export const data = graphql`
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
-          }          
+          }
         }
       }
     }
   }
-`;
-
+`

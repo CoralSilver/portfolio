@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Item from './item';
-import { Grid } from './gridImage.css';
-import { Container } from '../container.css';
+import React from "react"
+import PropTypes from "prop-types"
+import Item from "./item"
+import { Grid } from "./gridImage.css"
+import { Container } from "../container.css"
 
 const GridImage = ({ items, title }) => (
   <Container>
@@ -13,10 +13,10 @@ const GridImage = ({ items, title }) => (
       ))}
     </Grid>
   </Container>
-);
+)
 
 GridImage.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
+}
 
-export default GridImage;
+export default GridImage

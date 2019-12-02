@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Container = styled.div`
   display: flex;
@@ -9,8 +9,8 @@ export const Container = styled.div`
   margin-right: auto;
   text-align: center;
   padding: 2rem;
-`;
+`
 
 export const ContainerLarge = styled(Container)`
   text-align: inherit;
-`;
+`
