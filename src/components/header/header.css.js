@@ -16,4 +16,11 @@ export default styled.header`
   h1, a {
     font-size: inherit;
   }
+
+  @media only screen and (max-width: 400px) {
+    li {
+      padding-right: .5rem;
+      font-size: .7rem;
+    }  
+  }
 `;

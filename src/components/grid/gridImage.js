@@ -4,9 +4,9 @@ import Item from './item';
 import { Grid } from './gridImage.css';
 import { Container } from '../container.css';
 
-const GridImage = ({ items }) => (
+const GridImage = ({ items, title }) => (
   <Container>
-    <h1>Portfolio</h1>
+    <h1>{title}</h1>
     <Grid>
       {items.map((item, i) => (
         <Item {...item} key={i} />

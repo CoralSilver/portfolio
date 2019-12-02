@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import StyledHeader from "./header.css";
 
-const Header = ({ siteTitle, path }) => (
+const Header = ({ siteTitle }) => (
   <StyledHeader>
     <nav>
       <h1 style={{ margin: 0, fontWeight: "400" }}>
@@ -15,6 +15,11 @@ const Header = ({ siteTitle, path }) => (
         <li>
         <Link to="/portfolio">
           Portfolio
+        </Link>
+        </li>
+        <li>
+        <Link to="/experiments">
+          Experiments
         </Link>
         </li>
         <li>

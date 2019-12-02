@@ -9,6 +9,8 @@ class PortfolioPageTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
+    const path = post.frontmatter.path.split('/')[0];
+    const formattedPath = `/${path}`;
 
     return (
       <Layout location={this.props.location} title={siteTitle} path={this.props.path}>
@@ -33,7 +35,7 @@ class PortfolioPageTemplate extends React.Component {
               <li>Category: {post.frontmatter.category }</li>
             )}  
             </ul>
-            <StyledLink to="/portfolio">Close Project</StyledLink>
+            <StyledLink to={formattedPath}>Close Project</StyledLink>
           </StyledArticle>
         </ContainerLarge>
       </Layout>
@@ -44,6 +46,7 @@ class PortfolioPageTemplate extends React.Component {
 export default PortfolioPageTemplate;
 
 const StyledArticle = styled.article`
+  width: 100%;
   a {
     font-weight: 700;
   }

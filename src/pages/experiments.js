@@ -4,28 +4,28 @@ import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 import GridImage from "../components/grid/gridImage";
 
-const PortfolioPage = ({data, path}) => {
+const ExperimentsPage = ({data, path}) => {
   const parsedData = data.allContentJson.nodes[0];
 
   return (
   <div>
     <Layout path={path}>
-      <SEO title="Portfolio" />
+      <SEO title="Experiments" />
       <section>
-        <GridImage title="Portfolio" items={parsedData.gallery} />
+        <GridImage title="Experiments" items={parsedData.experiments} />
       </section>
     </Layout>
   </div>
   )
 }
 
-export default PortfolioPage;
+export default ExperimentsPage;
 
 export const data = graphql`
-  query portfolioQuery {
+  query experiementsQuery {
     allContentJson {
       nodes {
-        gallery {
+        experiments {
           title
           copy
           linkTo

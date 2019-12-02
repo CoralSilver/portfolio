@@ -9,8 +9,8 @@ const Item = ({ title, copy, image, linkTo }) => (
     <Link to={linkTo}>
     <Img fluid={image ? image.childImageSharp.fluid : {}} alt={title} />
     <figcaption>
-      <Title>{title}</Title>
-      <Copy>{copy}</Copy>
+      {title && <Title>{title}</Title>}
+      {copy && <Copy>{copy}</Copy>}
     </figcaption>
     </Link>
   </Card>

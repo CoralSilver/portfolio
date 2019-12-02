@@ -1,5 +1,4 @@
 {
-  "title": "Home",
   "gallery": [{
     "title": "Moody's Analytics",
     "copy": "Front-End Development",
@@ -35,5 +34,37 @@
     "copy": "Website Design and Development",
     "linkTo": "/portfolio/art-portfolio/",
     "image": "../images/portfolio/Personal_Art_Portfolio.png"
-  }]
+  }],
+  "experiments": [
+    {
+      "title": "Spinning Mandala",
+      "linkTo": "/experiments/mandala/",
+      "image": "../images/fun/code-mandala.png"
+    },
+    {
+      "title": "Gradient Shapes",
+      "linkTo": "/experiments/gradient-shapes",
+      "image": "../images/fun/gradient-shapes.png"
+    },
+    {
+      "title": "Joseph Albers",
+      "linkTo": "/experiments/joseph-albers",
+      "image": "../images/fun/joseph-albers.png"
+    },
+    {
+      "title": "Shifting Columns",
+      "linkTo": "/experiments/shifting-columns-dark",
+      "image": "../images/fun/columns-random-dark.png"
+    },
+    {
+      "title": "Shifting Columns II",
+      "linkTo": "/experiments/shifting-columns/",
+      "image": "../images/fun/three-columns-seizure.png"
+    },
+    {
+      "title": "Disco Floor",
+      "linkTo": "/experiments/hover-rectangles",
+      "image": "../images/fun/hover-squares.png"
+    }
+  ]
 }
