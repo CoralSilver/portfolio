@@ -21,7 +21,7 @@ const Social = () => {
       <li>
         <a
           rel="noreferrer"
-          href="https://www.linkedin.com/pub/coral-silverman/28/b50/63"
+          href="https://www.linkedin.com/in/coral-s-063b5028/"
           target="_blank"
           aria-label="linkedin icon"
         >
